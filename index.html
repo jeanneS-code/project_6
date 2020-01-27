@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Turn-based Board Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+<div id="images"> <!--this is set to display none in CSS-->
+        <img src="images/trees.png">
+        <img src="images/gun.png">
+        <img src="images/bow.png">
+        <img src="images/trident.png">
+        <img src="images/playerOne.png">
+        <img src="images/playerTwo.png">
+        <img src="images/defaultWeapon.png">
+        <img src="images/blue.png">
+    </div>
+<div id="board">
+     <canvas width="990" height="720" id="boardCanvas"></canvas>
+     <table id="tbl" border="2px"></table>
+     <form>
+        <input type="button" id="startButton"  value="Start!">
+        <input type="button" id="attackButton" value="Attack!">
+        <input type="button" id="defendButton" value="Defend!">
+        <input type="button" id="endButton" value="End Turn">
+        <input type="button" id="resetButton" value="Reset">
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
